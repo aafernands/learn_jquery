@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>jQUERY!</title>
+</head>
+
+<body>
+    <h1 class="jumbotron">jQUERY</h1>
+    <!-- Hide / Show / Toggle Elements -->
+    <div class="wrapper">
+        <div class="container">
+            <h2 id="topic_1">Hide / Show / Toggle Elements</h2>
+        </div>
+        <button id="hideButton">Hide Text</button>
+        <button id="showButton">Show Text</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo corporis optio laboriosam atque
+            beatae debitis error sapiente maxime odit quidem repellendus dolore, quos amet harum iure ullam nam placeat?
+        </p>
+    </div>
+    <hr>
+    <!-- Hover -->
+
+    <div class="wrapper">
+
+        <h2 id="topic_2" class="toggle">Hover Append | Fade Out / Fade In</h2>
+
+        <div>
+            <h4 class="hoverTextAppend">Hover Here to Append somenthing </h4>
+            <h4 class="hoverTextFade">Hover Here to Fade Out and Fade In</h4>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h2>Get and set attribute values | attr() </h2>
+        <!-- href, src, id, class, style -->
+        <a href="https://www.lady.com"> Click Here to Get an attr</a>
+        <br>
+        <a id="a2" href="https://www.lady.com"> Click Here to Set an attr</a>
+
+    </div>
+    <div class="wrapper">
+        <h2>Removing attributes | removeAttr() </h2>
+        <table class="tbl" border="5">
+            <tr>
+                <td>one</td>
+                <td>two</td>
+            </tr>
+            <tr>
+                <td>three</td>
+                <td>Four</td>
+            </tr>
+        </table>
+        <br>
+        <button id="btnTable">Click to remove attr</button>
+    </div>
+    <hr>
+    <div class="wrapper">
+        <h2>Get content html() / text() </h2>
+        <p id="pGetHTMLContent">Query is <b> fun </b></p>
+        <button id="btnGetHTML">Click to get HTML</button>
+
+        <p id="pGetTEXTContent">Query is <b> fun </b></p>
+        <button id="btnGetTEXT">Click to get Text</button>
+    </div>
+
+
+    <div class="wrapper">
+        <h2>Set content html() / text() </h2>
+
+        <div id="testText">
+            <p>Hello World TEXT!</p>
+        </div>
+        <button id="btnSetTEXT">Click to set TEXT</button>
+
+
+        <div id="testHTML">
+            <p>Hello World HTML!</p>
+        </div>
+        <button id="btnSetHTML">Click to set HTML</button>
+    </div>
+
+
+    <div class="wrapper">
+        <h2>Set content val() </h2>
+
+        <input type="text" id="name" value="Your Name">
+        <button id="btnSetVal">Click Here</button>
+
+    </div>
+    <hr>
+    <div class="wrapper">
+        <h2>Adding Content append() </h2>
+        <p id="demoAppend">ALEX</p>
+        <button id="btnAppend">Click Here</button>
+
+
+    </div>
+
+
+    <div class="wrapper">
+        <h2>Adding Content prepend() </h2>
+        <p id="demoPrepend">ALEX</p>
+        <button id="btnPrepend">Click Here</button>
+
+    </div>
+
+    <div class="wrapper">
+        <h2>Adding Content after() </h2>
+        <p id="demoAddAfter">ALEX</p>
+        <br>
+        <button id="btnAddAfter">Click Here</button>
+    </div>
+
+    <div class="wrapper">
+        <h2>Adding Content before() </h2>
+        <p id="demoAddBefore">ALEX</p>
+        <br>
+        <button id="btnAddBefore">Click Here</button>
+    </div>
+
+    <div class="wrapper">
+        <h2>Adding New Elements </h2>
+        <p id="addNewElement">Hi there,</p>
+        <br>
+        <button id="addNewEleBtn">Click Here</button>
+    </div>
+
+    <!-- ******************************************** MANIPULATING CSS -->
+    <div class="wrapper">
+        <h2>MANIPULATING CSS </h2>
+        <!-- Add Class addClass() -->
+        <h3>Add Class addClass()</h3>
+        <div>
+            <h1 id="h1AddClass">Text Example</h1>
+        </div>
+        <br>
+        <button id="addClassBtn">Add Class Tittle color </button>
+        <hr>
+        <!-- Remove Class removeClass() -->
+        <h3>Remove Class removeClass()</h3>
+        <div>
+            <h1 class="RemoveClassStyle RemoveClassStyle2" id="h1text">Text Example</h1>
+        </div>
+        <br>
+        <button id="removelassBtn">Remove Class Tittle style </button>
+        <hr>
+        <!-- Toggle Class -->
+        <h3>Toggle Class toggleClass </h3>
+        <h1 id="h1toggleClass">Text Example</h1>
+        <button id="toggleClassBtn">Toggle Class</button>
+    </div>
+
+    <!-- CSS properties -->
+    <div class="wrapper">
+        <div>
+            <h3>CSS properties
+            </h3>
+            <p id="pCssProperty">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus,
+                temporibus, nostrum laborum repellendus voluptate labore hic voluptas laudantium ducimus quisquam,
+                officiis iusto sint non recusandae. Omnis natus corrupti ipsum!</p>
+            <button id="cssPropertieBtn">get CSS Property values</button>
+        </div>
+        <hr>
+        <!-- Multiple CSS properties -->
+        <div>
+            <h3>Set Multiple CSS properties (use JSON syntax</h3>
+            <p class="multiplepropertiesCSS">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aut
+                repellendus recusandae animi cupiditate veniam eius. Eius quas, tempora modi culpa consectetur quia
+                delectus odio eveniet exercitationem assumenda ad perspiciatis!</p>
+            <button id="multiplepropBtn">get CSS Property values</button>
+        </div>
+
+        <hr>
+        <!-- Dimensions CSS properties width() / height() -->
+        <div>
+            <h3>Dimensions CSS properties width() / height()</h3>
+
+            <div id="dimensionsCSS"></div>
+            <br>
+            <button id="dimensionsCssBtn">get CSS Property values</button>
+        </div>
+
+        <hr>
+        <div>
+            <div id="dimensions"></div>
+            <br>
+            <button id="dimenBtn">get CSS Property values</button>
+
+            <br>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="wrapper">
+        <h3>Events on()</h3>
+
+        <div class="box"></div>
+        <hr>
+        <button id="next">Next</button>
+        <button id="prev">Previous</button>
+    </div>
+
+
+
+
+
+
+
+    <!-- ******************************************* LOOPS  -->
+    <h1 class="jumbotron">LOOPS</h1>
+    <div class="wrapper">
+        <h3>For Loop</h3>
+        <div class="js">REACT</div>
+        <div class="js">ANGULAR</div>
+        <div class="js">TYPESCRIPT</div>
+        <div class="js">ES6</div>
+
+    </div>
+
+    <div class="wrapper">
+        <h3>For Each Loop</h3>
+        <div class="jsForEach">Results Will Display here</div>
+    </div>
+
+    <div class="wrapper">
+        <h3>Map</h3>
+        <div class="jsMap">Return a new element</div>
+    </div>
+
+
+    <div class="wrapper">
+        <h3>While</h3>
+        <div class="jswhile">Return a new element</div>
+    </div>
+
+    <div class="wrapper">
+        <h2>EVENTS </h2>
+
+        <h3>Handling Events</h3>
+        <div id=dataDisplay>Welcome!</div>
+        <button id="handlingEventsBtn">click me</button>
+    </div>
+
+
+
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
