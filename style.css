@@ -92,3 +92,65 @@ p {
 	background-color: rgb(255, 0, 128);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+#banner1 {
+	background: red;
+	border-radius: 4px;
+	padding: 20px;
+	font-size: 25px;
+	text-align: center;
+	transition: all 0.2s;
+	margin: 0 auto;
+	width: 300px;
+}
+
+#banner2 {
+	background: blue;
+	border-radius: 4px;
+	padding: 20px;
+	font-size: 25px;
+	text-align: center;
+	transition: all 0.2s;
+	margin: 0 auto;
+	width: 300px;
+}
+
+button {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 14px;
+	font-size: 15px;
+	color: white;
+}
+
+#banner1.alt {
+	background: #0084ff;
+	color: #fff;
+}
+
+#banner1.alt button {
+	background: #fff;
+	color: #000;
+}
+
+#banner2.alt {
+	background: black;
+	color: #fff;
+}
+
+#banner2.alt button {
+	background: #fff;
+	color: #000;
+}

@@ -1,4 +1,21 @@
 $(document).ready(() => {
+	var banner1 = $("#banner1");
+	var banner2 = $("#banner2");
+
+	var button1 = $("#button1");
+	var button2 = $("#button2");
+
+	button1.on("click", () => {
+		banner1.toggleClass("alt");
+		banner1.fadeOut(1000);
+	});
+
+	button2.on("click", () => {
+		banner2.toggleClass("alt");
+		banner2.fadeOut(1000);
+	});
+
+
 	//Hide | Show | Toggle Elements!
 	$("#hideButton").click(() => {
 		$("p").fadeOut(1000);
